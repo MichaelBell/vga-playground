@@ -34,7 +34,7 @@ export function decodeVGAOutput(uo_out: number, polarity?: SyncPolarity): VGASig
 
 export function detectSyncPolarity(mod: HDLModuleWASM): SyncPolarity {
   const uo_out_offset = mod.globals.lookup('uo_out').offset;
-  const MAX_TICKS = 500_000;
+  const MAX_TICKS = 700_000;
 
   function detectBit(mask: number): boolean {
     const bit = () => !!(mod.data8[uo_out_offset] & mask);
