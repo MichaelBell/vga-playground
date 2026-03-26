@@ -4,8 +4,8 @@
 
 import { HDLModuleWASM } from './hdlwasm';
 
-export const VGA_WIDTH = 736;
-export const VGA_HEIGHT = 520;
+export const VGA_WIDTH = 1024;
+export const VGA_HEIGHT = 624;
 
 export interface VGASignals {
   hsync: boolean;
